@@ -1,35 +1,167 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Website</title>
+    <title>WEB &amp; GRAPHIC DESIGNER</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+      }
+      .header {
+        height: 100vh;
+        background-image: url("video/banner00.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        display: flex;
+        flex-direction: column; /* Ajout de cette ligne */
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        background-color: #333;
+        color: white;
+        margin-top: auto; /* Ajout de cette ligne */
+      }
+      .navbar__logo {
+        font-size: 2rem;
+        font-weight: bold;
+      }
+      .navbar__menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .navbar__menu-item {
+        margin-left: 1rem;
+      }
+      .title {
+        position: relative;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+      .title::before,
+      .title::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .title::before {
+        left: 0;
+      }
+      .title::after {
+        right: 0;
+      }
+      .title::before,
+      .title::after {
+        display: none; /* Ajout de cette ligne pour supprimer la ligne */
+      }
+      h2 {
+        font-size: 2.8em;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .title::before,
+      .title::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .title::before {
+        left: 0;
+      }
+      .title::after {
+        right: 0;
+      }
+      h2 {
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* Ajout de lignes au-dessus et en dessous du h2 */
+      h2::before,
+      h2::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+      }
+
+      h2::before {
+        left: 0;
+        margin-top: -30px; /* Décale la ligne vers le haut de 50px */
+      }
+
+      h2::after {
+        right: 0;
+        margin-top: 30px; /* Décale la ligne vers le bas de 50px */
+      }
+      .learn-more-button {
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+        margin-top: 380px; /* Ajustez selon vos préférences */
+        cursor: pointer;
+      }
+
+      .learn-more-button:hover {
+        background-color: white;
+        color: black;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <!-- Header content goes here -->
-    </header>
-    <main>
-      <div style="position: relative">
-        <video autoplay muted loop style="width: 100%; height: auto">
-          <source src="path/to/video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <h1
-          style="
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 5em;
-            color: white;
-          "
-        >
-          My Big Title
-        </h1>
+    <header class="header">
+      <h2>WEB &amp; GRAPHIC DESIGNER</h2>
+      <div style="text-align: center">
+        <a href="#" class="learn-more-button">LEARN MORE</a>
       </div>
-      <!-- Main content goes here -->
+    </header>
+    <nav class="navbar">
+      <div class="navbar__logo">Logo</div>
+      <div class="navbar__menu">
+        <a href="#" class="navbar__menu-item">Menu Item 1</a>
+        <a href="#" class="navbar__menu-item">Menu Item 2</a>
+        <a href="#" class="navbar__menu-item">Menu Item 3</a>
+      </div>
+    </nav>
+    <main>
+      <!-- Le contenu principal va ici -->
     </main>
     <footer>
-      <!-- Footer content goes here -->
+      <!-- Le contenu du pied de page va ici -->
     </footer>
   </body>
 </html>
