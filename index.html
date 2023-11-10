@@ -39,6 +39,12 @@
       }
       .navbar__menu-item {
         margin-left: 1rem;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .navbar__menu-item:hover {
+        color: #4caf50;
       }
       .title {
         position: relative;
@@ -66,32 +72,6 @@
       .title::before,
       .title::after {
         display: none; /* Ajout de cette ligne pour supprimer la ligne */
-      }
-      h2 {
-        font-size: 2.8em;
-        font-weight: bold;
-        color: white;
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-      .title::before,
-      .title::after {
-        content: "";
-        display: block;
-        height: 1px;
-        width: 100%;
-        background-color: white;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-      }
-      .title::before {
-        left: 0;
-      }
-      .title::after {
-        right: 0;
       }
       h2 {
         font-size: 2em;
@@ -150,16 +130,81 @@
       </div>
     </header>
     <nav class="navbar">
-      <div class="navbar__logo">Logo</div>
+      <div class="navbar__logo" style="color: white">
+        FO<span style="color: #4caf50">CAL</span>
+      </div>
       <div class="navbar__menu">
-        <a href="#" class="navbar__menu-item">Menu Item 1</a>
-        <a href="#" class="navbar__menu-item">Menu Item 2</a>
-        <a href="#" class="navbar__menu-item">Menu Item 3</a>
+        <a href="#" class="navbar__menu-item">Home</a>
+        <a href="#" class="navbar__menu-item">About</a>
+        <a href="#" class="navbar__menu-item">Skills</a>
+        <a href="#" class="navbar__menu-item">Resume</a>
+        <a href="#" class="navbar__menu-item">Testimonials</a>
+        <a href="#" class="navbar__menu-item">Portfolio</a>
+        <a href="#" class="navbar__menu-item">Contact Me</a>
       </div>
     </nav>
     <main>
-      <!-- Le contenu principal va ici -->
+      <section>
+        <h1>Bienvenue sur mon site web</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+          sapien vel bibendum bibendum, elit ipsum bibendum ipsum, vel bibendum
+          ipsum elit vel ipsum. Sed euismod, sapien vel bibendum bibendum, elit
+          ipsum bibendum ipsum, vel bibendum ipsum elit vel ipsum.
+        </p>
+      </section>
+      <section>
+        <h1>À propos de moi</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+          sapien vel bibendum bibendum, elit ipsum bibendum ipsum, vel bibendum
+          ipsum elit vel ipsum. Sed euismod, sapien vel bibendum bibendum, elit
+          ipsum bibendum ipsum, vel bibendum ipsum elit vel ipsum.
+        </p>
+      </section>
+      <section>
+        <h1>Mes projets</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+          sapien vel bibendum bibendum, elit ipsum bibendum ipsum, vel bibendum
+          ipsum elit vel ipsum. Sed euismod, sapien vel bibendum bibendum, elit
+          ipsum bibendum ipsum, vel bibendum ipsum elit vel ipsum.
+        </p>
+      </section>
+
+      <div>
+        <img src="img/me.jpg" alt="" />
+        <h1>About Me</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+          sapien vel bibendum bibendum, elit ipsum bibendum ipsum, vel bibendum
+          ipsum elit vel ipsum. Sed euismod, sapien vel bibendum bibendum, elit
+          ipsum bibendum ipsum, vel bibendum ipsum elit vel ipsum.
+        </p>
+      </div>
     </main>
+
+    <style>
+      main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      section {
+        width: calc(33.33% - 10px);
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2 {
+        margin-top: 0;
+      }
+    </style>
     <footer>
       <!-- Le contenu du pied de page va ici -->
     </footer>
